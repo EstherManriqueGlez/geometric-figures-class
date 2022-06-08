@@ -1,5 +1,17 @@
-class Rectangle {
-  constructor(canvas, x1, y1, x2, y2) {
+export default class Rectangle {
+  canvas: CanvasRenderingContext2D;
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+
+  constructor(
+    canvas: CanvasRenderingContext2D,
+    x1: number,
+    y1: number,
+    x2: number,
+    y2: number
+  ) {
     this.canvas = canvas;
     this.x1 = x1;
     this.y1 = y1;
@@ -14,5 +26,3 @@ class Rectangle {
     this.canvas.fill();
   }
 }
-
-export { Rectangle };

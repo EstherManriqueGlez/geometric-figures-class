@@ -1,5 +1,21 @@
-class Triangle {
-  constructor(canvas, x1, y1, x2, y2, x3, y3) {
+export default class Triangle {
+  canvas: CanvasRenderingContext2D;
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+  x3: number;
+  y3: number;
+
+  constructor(
+    canvas: CanvasRenderingContext2D,
+    x1: number,
+    y1: number,
+    x2: number,
+    y2: number,
+    x3: number,
+    y3: number
+  ) {
     this.canvas = canvas;
     this.x1 = x1;
     this.y1 = y1;
@@ -20,5 +36,3 @@ class Triangle {
     this.canvas.stroke();
   }
 }
-
-export { Triangle };

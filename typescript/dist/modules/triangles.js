@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Triangle = void 0;
-class Triangle {
+export default class Triangle {
     constructor(canvas, x1, y1, x2, y2, x3, y3) {
         this.canvas = canvas;
         this.x1 = x1;
@@ -23,4 +20,3 @@ class Triangle {
         this.canvas.stroke();
     }
 }
-exports.Triangle = Triangle;

@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Rectangle = void 0;
-class Rectangle {
+export default class Rectangle {
     constructor(canvas, x1, y1, x2, y2) {
         this.canvas = canvas;
         this.x1 = x1;
@@ -17,4 +14,3 @@ class Rectangle {
         this.canvas.fill();
     }
 }
-exports.Rectangle = Rectangle;
